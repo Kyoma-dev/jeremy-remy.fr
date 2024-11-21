@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "browser-sync": "^3.0.3"
+  },
+  "scripts": {
+    "watch": "browser-sync start --config bs-config.js"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  }
+}

@@ -1,0 +1,278 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Jérémy REMY | Développeur web fullstack{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+    <header id="header">
+        {% include 'partials/navbar.html.twig' %}
+    </header>
+
+    <section id="landing">
+        <div id="avatar"></div>
+        <div class="landing_text">
+            <div class="p1">
+                <p>Enchanté, je suis <strong>Jérémy</strong></p>
+                <h1>Développeur Fullstack</h1>
+            </div>
+            <div class="landing_button">
+                <a href="https://www.linkedin.com/in/jérémy-remy-66b445298/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:dev.kyoma@gmail.com" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="{{ asset('files/CV.pdf') }}" download="CV_REMY_JEREMY.pdf" target="_blank">
+                  <i class="fa-solid fa-file"></i>
+                </a>
+            </div>
+            <div class="p2">
+                <p>En recherche d'alternance de</p>
+                <h3>Concepteur Développeur d'Applications</h3>
+                <p>de niveau</p>
+                <h3>BAC +3</h3>
+                <strong>(RNCP de niveau 6)</strong>
+            </div>
+            <p>Ouvert aux opportunités professionnelle de mission en freelance</p>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="landing_manuscrit_bot">
+            <img src="{{ asset('images/manuscrit2.png') }}" alt="Photo de REMY JEREMY">
+        </div>
+    </section>
+
+
+    <section id="about">
+
+        <div class="about_title">
+            <h2 class="tree_text">ARBRE DES SAVOIRS</h2>
+            <a class="download-cv" href="{{ asset('files/CV.pdf') }}" download="CV_REMY_JEREMY.pdf" target="_blank">
+                <span class="download-cv-text">Laissez vous tenter par mon CV <i class="fa-regular fa-floppy-disk"></i></span>
+            </a>
+        </div>
+        <div class="about_img">
+            <div class="about_img_container">
+            <img src="{{ asset('images/tree.png') }}" alt="Photo de REMY JEREMY" class="tree">
+
+            <!-- Fruits interactifs -->
+        <img src="{{ asset('images/pear.png') }}" alt="Fruit 1" class="fruit fruit1" data-quote="quote_1">
+        <img src="{{ asset('images/appleart.png') }}" alt="Fruit 2" class="fruit fruit2" data-quote="quote_2">
+        <img src="{{ asset('images/passion.png') }}" alt="Fruit 3" class="fruit fruit3" data-quote="quote_3">
+        <img src="{{ asset('images/fraise.png') }}" alt="Fruit 4" class="fruit fruit4" data-quote="quote_4">
+        
+        <blockquote>Depuis petit, l'informatique a toujours été le fil conducteur de ma vie, encore au moment où vous lisez ces lignes. Secrétaire en reconversion, je décide enfin d'essayer de vivre de ma passion, et de découvrir l'univers de la programmation.</blockquote>
+        </div>
+            <img src="{{ asset('images/grass.png') }}" alt="Photo de REMY JEREMY" class="grass">
+        </div>
+        <div class="about_quote">
+            <p id="instruction">Sélectionnez un fruit en cliquant gauche sur l'arbre ci-contre</p>
+            <div class="quote quote_1 hidden">
+                <h3>Développeur Full-stack passionné</h3>
+                <p>Les premiers sites que je faisais, c’étaient des présentations de petit jeu crée sur rpg maker au lycée, la nostalgie...</p>
+            </div>
+            <div class="quote quote_2 hidden">
+                <h3>Motivé par le besoin de satisfaire</h3>
+                <p>Ce qui me plaîsait dans le secrétariat, c’était la satisfaction d’apporter de l’aide...</p>
+            </div>
+            <div class="quote quote_3 hidden">
+                <h3>Curieux et avide de connaissance</h3>
+                <p>J’adore l’informatique certes, mais aussi la culture générale, ne soyez pas surpris...</p>
+            </div>
+            <div class="quote quote_4 hidden">
+                <h3>Si vous, recruteurs, passez par là...</h3>
+                <p>Je suis encore en plein apprentissage, et cela tombe bien...</p>
+            </div>
+        </div>
+            
+    </section>
+
+    <section id="skills">
+    <div class="slideshow-container" id="slideshow">
+    <div class="slideshow-track">
+        <div class="slideshow-item">
+            <i class="fab fa-html5 slider-icon"></i>
+            <h4>HTML & CSS</h4>
+            <p>Création d'interfaces esthétiques, maîtrise de Bootstrap.</p>
+        </div>
+        <div class="slideshow-item">
+            <i class="fab fa-js-square slider-icon"></i>
+            <h4>JavaScript</h4>
+            <p>Frameworks : jQuery, Express.js, Angular.</p>
+        <p>Création de sites internet interactifs et dynamiques avec JavaScript, adaptés à vos besoins et optimisés pour la performance.</p>
+        </div>
+        <div class="slideshow-item">
+            <i class="fab fa-java slider-icon"></i>
+            <h4>Java</h4>
+            <p>Développement d'applications avec Java SE et Spring Boot.</p>
+        </div>
+        <div class="slideshow-item">
+            <i class="fab fa-php slider-icon"></i>
+            <h4>PHP</h4>
+            <p>Maîtrise de Symfony pour applications web dynamiques.</p>
+        </div>
+        <div class="slideshow-item">
+            <i class="fas fa-database slider-icon"></i>
+            <h4>SQL</h4>
+            <p>Conception de bases de données avec SQL Server, MySQL, MongoDB.</p>
+        </div>
+        <div class="slideshow-item">
+            <i class="fab fa-wordpress slider-icon"></i>
+            <h4>Wordpress</h4>
+        <p>Création de sites internet professionnels et personnalisés avec WordPress, adaptés à vos besoins et optimisés pour le référencement.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+    <section id="carousel">
+    <div class="side-image left">
+        <img src="{{ asset('images/draw.svg') }}" alt="Image de gauche">
+    </div>
+    <div class="carousel-container">
+  <div class="carousel">
+    <div class="card">
+      <div class="card-header">
+        <div class="header-text">
+          <h3>GAMEPAW</h3>
+          <p>Développement de jeu sous unreal engine</p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-image">
+            <img src="{{ asset('images/img_gamepaw.png') }}" >
+        </div>
+        <h4>GAMEPAW.FR</h4>
+        <p>Site internet de l'entreprise</p>
+        <p>GAMEPAW est un studio de jeu vidéo indépendant, incubé à Plaines Images. Effectué lors d'un stage, j'ai eu pour mission de créer un site vitrine dans un court laps de temps en répondant aux attentes de mes clients.</p>
+        <div class="buttons">
+          <button class="btn active">Visiter le site</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="header-text">
+          <h3>PROJET - SORTIR</h3>
+          <p>Sorties communautaires</p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-image">
+            <img src="{{ asset('images/img_sortir.png') }}" >
+        </div>
+        <h4>SORTIR.COM</h4>
+        <p>Plateforme communautaire</p>
+        <p>SORTIR.COM est un projet d'étude réalisé lors de mon passage chez ENI ECOLE. Il s'agit d'une plateforme communautaire ou les utilisateurs peuvent créer, s'inscrire et rejoindre des sorties en fonction de leur campus.</p>
+        <div class="buttons">
+          <button class="btn active">Visiter la plateforme</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="header-text">
+          <h3>PROJET - ENCHÈRE</h3>
+          <p>Site d'enchères</p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-image"></div>
+        <h4>PROJET - ENCHÈRE</h4>
+        <p>Plateforme d'enchère communautaire</p>
+        <p>ENCHÈRE est un projet d'étude réalisé lors de mon passage chez ENI ECOLE. Il s'agit d'une plateforme d'enchère, ou les utilisateurs peuvent enchérir avec une monnaie propre au site (des "points"). Ils peuvent également mettre en vente leurs objets afin de récolter ces derniers. </p>
+        <div class="buttons">
+          <button class="btn active">Visiter la plateforme</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="header-text">
+          <h3>PROJET - ENCHÈRE</h3>
+          <p>Site d'enchères</p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-image"></div>
+        <h4>PROJET - ENCHÈRE</h4>
+        <p>Plateforme d'enchère communautaire</p>
+        <p>ENCHÈRE est un projet d'étude réalisé lors de mon passage chez ENI ECOLE. Il s'agit d'une plateforme d'enchère, ou les utilisateurs peuvent enchérir avec une monnaie propre au site (des "points"). Ils peuvent également mettre en vente leurs objets afin de récolter ces derniers. </p>
+        <div class="buttons">
+          <button class="btn active">Visiter la plateforme</button>
+        </div>
+      </div>
+    </div>
+    <!-- Répéter les cartes selon besoin -->
+  </div>
+  <div class="carousel-control prev"><i class="fas fa-chevron-left"></i></div>
+    <div class="carousel-control next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+
+    <div class="side-image right">
+        <img src="{{ asset('images/slide.svg') }}" alt="Image de droite">
+    </div>
+
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-header">
+    <h1>CONTACTEZ-MOI</h1>
+    <div class="contact-icons">
+    <div class="circle-button">
+      <a href="https://www.linkedin.com/in/jérémy-remy-66b445298/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Kyoma-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:dev.kyoma@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      <a href="{{ asset('files/CV.pdf') }}" download="CV_REMY_JEREMY.pdf" target="_blank">
+        <i class="fa-solid fa-file"></i>
+      </a>         
+    </div>
+    </div>
+    </div>
+
+    {% for type, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="flash-{{ type }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
+
+  <div class="contact-form">
+    <form id="contactForm" action="{{ path('send_mail') }}" method="POST">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="subject">Objet</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="captcha">
+            <div class="g-recaptcha" data-sitekey="6LfIoHoqAAAAAGOXsUndDO7grHwjOErsTMdZcdEv"></div>
+        </div>
+
+        <input type="text" name="hidden_field" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="submit-btn">Soumettre</button>
+    </form>
+</div>
+</section>
+
+    <a href="#contact" class="project-bubble-link">
+        <div class="project-bubble-icon">💡</div>
+        <div class="project-bubble-text">
+            <span>Une idée ?</span>
+            <span>Contactez-moi !</span>
+        </div>
+    </a>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'partials/footer.html.twig' %}
+{% endblock %}
