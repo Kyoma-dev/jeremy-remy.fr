@@ -39,7 +39,7 @@ class ContactController extends AbstractController
         if ($name && $subject && $email && $message) {
             $emailMessage = (new Email())
                 ->from($email) // Utiliser l'email de l'utilisateur comme expéditeur
-                ->to('dev.kyoma@gmail.com') // Adresse de réception
+                ->to('contact@jeremy-remy.fr') // Adresse de réception
                 ->subject($subject)
                 ->text("Nom: $name\nEmail: $email\nMessage:\n$message");
 
