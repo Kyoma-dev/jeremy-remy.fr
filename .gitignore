@@ -1,28 +1,25 @@
-###> symfony/framework-bundle ###
+# Ignorer les fichiers sensibles
+/.env
 /.env.local
-/.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
+
+# Ignorer les dépendances générées
 /vendor/
 /node_modules/
+
+# Ignorer les caches et fichiers temporaires
+/var/
 /build/
-###< symfony/framework-bundle ###
+/.cache/
 
-*.log
+# Ignorer les fichiers spécifiques aux outils de développement
+.idea/
+/.vscode/
+/phpunit.result.cache
 
-###> phpunit/phpunit ###
-/phpunit.xml
-.phpunit.result.cache
-###< phpunit/phpunit ###
-
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
-
-###> symfony/asset-mapper ###
+# Ignorer les assets compilés
 /public/assets/
-/assets/vendor/
-###< symfony/asset-mapper ###
+
+# Ignorer les fichiers logs
+*.log

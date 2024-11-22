@@ -1,6 +1,8 @@
 import './bootstrap.js';
 import './styles/app.css';
 
+console.log('app.js chargé et exécuté !');
+
 console.log(THREE); // Devrait afficher les classes de Three.js dans la console
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

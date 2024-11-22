@@ -110,8 +110,6 @@ body {
   }
 }
 
-
-
 #landing {
   display: grid;
   grid-template-columns: 30% 70%; /* Conserve la structure actuelle */
@@ -1003,6 +1001,11 @@ body {
 /* Responsive pour mobile (écran jusqu'à 575px) */
 @media (max-width: 575px) {
 
+  #about {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   body,
   html {
     width: 100%; /* Assure que le site occupe toute la largeur de la fenêtre */
@@ -1033,16 +1036,30 @@ body {
     justify-content: space-between; /* Aligne les éléments de la navbar sur les côtés */
   }
 
+  .navbar-toggler {
+    --bs-navbar-color: rgb(119, 219, 169);
+  }
+
+  .about_quote {
+    gap: unset;
+  }
+
   .nav-item i{
     display: none;
   }
 
-  .landing_text .p2, .landing_text .p2 h3, .landing_text p {
+  .landing_text .p2, .landing_text p {
     font-size: 1.5rem;
   }
 
+  .landing_text .p2 h3 {
+    font-size: 2rem;
+  }
+
   .landing_text .p2 {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .navbar-nav {
@@ -1077,11 +1094,11 @@ body {
   }
 
   .landing_text .p1 {
-    font-size: 3.5rem; /* Ajustez selon vos préférences */
+    font-size: 4rem; /* Ajustez selon vos préférences */
   }
 
   .landing_text .p1 strong {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .landing_text h1 {
@@ -1112,18 +1129,28 @@ body {
   .about_title {
     margin-right: unset;
     display: unset;
+    margin-bottom: 3rem;
+  }
+
+  .carousel-container {
+    margin-top: 0;
+  }
+
+  .contact-section {
+    max-width: 100%
   }
 
   .about_title h2 {
-    font-size: 3rem; /* Ajuste la taille de titre pour mobile */
+    font-size: 2.6rem; /* Ajuste la taille de titre pour mobile */
     margin-left: 0;
     text-align: center;
   }
 
   .download-cv {
-    margin-top: 20px; /* Ajoute un espace entre le titre et le bouton */
     display: flex;
     align-items: center;
+    text-align: center;
+    border: 2px solid rgb(119, 219, 169);
   }
 
   .project-bubble-link {
@@ -1176,7 +1203,7 @@ body {
   }
 
   .contact-header h1 {
-    font-size: 2rem; /* Ajuster la taille du titre pour mobile */
+    font-size: 3rem; /* Ajuster la taille du titre pour mobile */
     text-align: center;
   }
 
