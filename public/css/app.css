@@ -780,6 +780,14 @@ body {
   left: 40%;
 }
 
+#footer {
+  margin-top: 3rem;
+}
+
+#logo-footer {
+  max-height: 200px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contact-section {
@@ -994,6 +1002,14 @@ body {
   #avatar {
     display: none;
   }
+
+  #footer {
+    margin-top: 6rem;
+}
+
+#logo-footer {
+  max-height: 120px;
+}
   
 }
 

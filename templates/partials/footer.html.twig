@@ -1,7 +1,220 @@
 {# templates/partials/footer.html.twig #}
+<footer id="footer" class="footer py-3" style="background-color: #B197FC;">
+    <div class="container text-center">
+        <!-- Logo de l'entreprise -->
+        <div class="footer-logo mb-3">
+            <a href="{{ path('app_home') }}">
+                <img src="{{ asset('images/jr.png') }}" alt="Logo de l'entreprise" class="img-fluid" id="logo-footer">
+            </a>
+        </div>
 
-<footer>
-    <div class="container">
+        <!-- Texte et Liens -->
+        <div class="footer-text">
+            <span class="text-white">
+                © {{ "now"|date("Y") }} Jérémy REMY. Tous droits réservés.
+            </span>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#mentionsLegalesModal">Mentions Légales</a>
+                <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#politiqueConfModal">Politique de Confidentialité</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Mentions Légales -->
+    <div class="modal fade" id="mentionsLegalesModal" tabindex="-1" aria-labelledby="mentionsLegalesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #A977DB; color: white;">
+                    <h5 class="modal-title" id="mentionsLegalesLabel">Mentions Légales</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu des mentions légales -->
+                    <h6>Informations légales</h6>
+                <h2>Mentions Légales</h2>
+                
+                <h3>Éditeur du Site</h3>
+                <p><strong>Nom de l’entreprise ou de l’individu :</strong><br>
+                Jérémy REMY</p>
+                
+                <p><strong>Adresse :</strong><br>
+                40380 Montfort-en-chalosse, France</p>
+                
+                <p><strong>Email :</strong><br>
+                contact@jeremy-remy.fr</p>
+                
+                <p><strong>Numéro de Téléphone :</strong><br>
+                0613376509</p>
+                
+                <p><strong>Numéro SIRET :</strong><br>
+                A définir</p>
+                
+                <h3>Directeur de la Publication</h3>
+                <p>Jérémy REMY</p>
+                
+                <h3>Hébergement du Site</h3>
+                <p><strong>Nom de l’hébergeur :</strong><br>
+                o2switch</p>
+                
+                <p><strong>Adresse de l’hébergeur :</strong><br>
+                222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France</p>
+                
+                <p><strong>Email de l’hébergeur :</strong><br>
+                support@o2switch.fr</p>
+                
+                <p><strong>Numéro de Téléphone de l’hébergeur :</strong><br>
+                +33 9 72 10 10 07</p>
+                
+                <h3>Propriété Intellectuelle</h3>
+                <p>
+                    L’ensemble du contenu présent sur ce site, incluant, de manière non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de Jérémy REMY à l’exception des marques, logos ou contenus appartenant à d’autres sociétés partenaires ou auteurs.
+                </p>
+                <p>
+                    Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l’accord exprès par écrit de Jérémy REMY. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L 335-2 et suivants du Code de la propriété intellectuelle.
+                </p>
+                
+                <h3>Responsabilité</h3>
+                <p>
+                    Jérémy REMY ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.
+                </p>
+                <p>
+                    Jérémy REMY ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site.
+                </p>
+                
+                <h3>Liens Hypertextes</h3>
+                <p>
+                    Le site Jérémy REMY peut contenir des liens hypertextes vers d’autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font quitter le site Jérémy REMY. Il est possible de créer un lien vers la page de présentation de Jérémy REMY sans autorisation expresse de Jérémy REMY. Aucune autorisation ou demande d’information préalable ne peut être exigée par Jérémy REMY concernant les sites qui vous sont liés.
+                </p>
+                <p>
+                    Il est recommandé de vérifier que les sites auxquels vous êtes liés respectent vos critères de qualité.
+                </p>
+                
+                <h3>Données Personnelles</h3>
+                <p>
+                    Les informations recueillies via le formulaire de contact sont destinées exclusivement à Jérémy REMY pour le traitement de votre demande. Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, veuillez nous contacter à l’adresse email mentionnée ci-dessus.
+                </p>
+                <p>
+                    Enfin, les données personnelles collectées ne sont ni vendues, ni cédées à des tiers.
+                </p>
+                    <!-- Ajoutez d'autres sections si nécessaire -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Fermer">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Politique de Confidentialité -->
+    <div class="modal fade" id="politiqueConfModal" tabindex="-1" aria-labelledby="politiqueConfLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #A977DB; color: white;">
+                    <h5 class="modal-title" id="politiqueConfLabel">Politique de Confidentialité</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenu de la politique de confidentialité -->
+                    <h5>Politique de Confidentialité</h5>
+
+                    <h6>1. Introduction</h6>
+                    <p>
+                        La présente politique de confidentialité a pour objectif de vous informer sur la manière dont <strong>Jérémy REMY</strong> collecte, utilise, stocke et protège vos données personnelles lors de votre utilisation du site <a href="https://jeremy-remy.fr">jeremy-remy.fr</a>.
+                    </p>
+
+                    <h6>2. Responsable du Traitement</h6>
+                    <p>
+                        <strong>Nom :</strong><br>
+                        Jérémy REMY
+                    </p>
+                    <p>
+                        <strong>Adresse :</strong><br>
+                        40380 Montfort-en-chalosse, France
+                    </p>
+                    <p>
+                        <strong>Email :</strong><br>
+                        contact@jeremy-remy.fr
+                    </p>
+
+                    <h6>3. Données Collectées</h6>
+                    <p>
+                        Lorsque vous utilisez notre <strong>formulaire de contact</strong>, nous collectons les informations suivantes :
+                    </p>
+                    <ul>
+                        <li><strong>Nom</strong> (champ obligatoire)</li>
+                        <li><strong>Email</strong> (champ obligatoire)</li>
+                        <li><strong>Objet</strong> (champ obligatoire)</li>
+                        <li><strong>Message</strong> (champ obligatoire)</li>
+                    </ul>
+                    <p>
+                        De plus, nous pouvons collecter automatiquement certaines données techniques, telles que votre adresse IP, le type de navigateur utilisé, les pages consultées, et la date et l’heure de votre visite, à des fins statistiques et d’amélioration de nos services.
+                    </p>
+
+                    <h6>4. Finalités du Traitement</h6>
+                    <p>
+                        Les données que nous collectons sont utilisées pour :
+                    </p>
+                    <ul>
+                        <li><strong>Répondre à vos demandes</strong> via le formulaire de contact.</li>
+                        <li><strong>Améliorer</strong> le contenu et la fonctionnalité du site.</li>
+                        <li><strong>Analyser</strong> les tendances et les comportements des utilisateurs pour optimiser notre présence en ligne.</li>
+                    </ul>
+
+                    <h6>5. Base Légale du Traitement</h6>
+                    <p>
+                        Le traitement de vos données personnelles repose sur votre <strong>consentement</strong> (lorsque vous remplissez le formulaire de contact) et sur notre <strong>intérêt légitime</strong> (amélioration du site et des services).
+                    </p>
+
+                    <h6>6. Partage des Données</h6>
+                    <p>
+                        Nous ne vendons, n'échangeons ni ne transférons vos données personnelles à des tiers sans votre consentement, sauf si cela est requis par la loi.
+                    </p>
+
+                    <h6>7. Sécurité des Données</h6>
+                    <p>
+                        Nous mettons en œuvre diverses mesures de sécurité pour protéger vos informations personnelles contre tout accès non autorisé, modification, divulgation ou destruction. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n’est totalement sécurisée.
+                    </p>
+
+                    <h6>8. Conservation des Données</h6>
+                    <p>
+                        Nous conservons vos données personnelles uniquement pendant la durée nécessaire pour atteindre les finalités pour lesquelles elles ont été collectées, sauf si une période de conservation plus longue est requise ou permise par la loi.
+                    </p>
+
+                    <h6>9. Vos Droits</h6>
+                    <p>
+                        Conformément au <strong>RGPD</strong>, vous disposez des droits suivants concernant vos données personnelles :
+                    </p>
+                    <ul>
+                        <li><strong>Droit d'accès</strong> : Vous pouvez demander une copie des données personnelles que nous détenons à votre sujet.</li>
+                        <li><strong>Droit de rectification</strong> : Vous pouvez demander la correction de toute donnée personnelle inexacte ou incomplète.</li>
+                        <li><strong>Droit à l'effacement</strong> : Vous pouvez demander la suppression de vos données personnelles sous certaines conditions.</li>
+                        <li><strong>Droit à la limitation du traitement</strong> : Vous pouvez demander de limiter le traitement de vos données personnelles.</li>
+                        <li><strong>Droit d'opposition</strong> : Vous pouvez vous opposer au traitement de vos données personnelles.</li>
+                        <li><strong>Droit à la portabilité</strong> : Vous pouvez demander de recevoir vos données personnelles dans un format structuré et couramment utilisé.</li>
+                    </ul>
+                    <p>
+                        Pour exercer ces droits, veuillez nous contacter à l’adresse email mentionnée ci-dessus.
+                    </p>
+
+                    <h6>10. Modifications de la Politique de Confidentialité</h6>
+                    <p>
+                        Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour.
+                    </p>
+
+                    <h6>11. Contact</h6>
+                    <p>
+                        Si vous avez des questions concernant cette politique de confidentialité ou le traitement de vos données personnelles, veuillez nous contacter à :
+                    </p>
+                    <p>
+                        <strong>Email :</strong><br>
+                        contact@jeremy-remy.fr
+                    </p>
+                    <!-- Ajoutez d'autres sections si nécessaire -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Fermer">Fermer</button>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>

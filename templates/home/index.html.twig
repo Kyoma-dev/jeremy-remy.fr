@@ -18,8 +18,8 @@
                 <h1>Développeur Fullstack</h1>
             </div>
             <div class="landing_button">
-                <a href="https://www.linkedin.com/in/jérémy-remy-66b445298/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jérémy-remy-66b445298/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:contact@jeremy-remy.fr" target="_blank">
                   <i class="fa-solid fa-envelope"></i>
                 </a>
@@ -38,7 +38,7 @@
             <i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="landing_manuscrit_bot">
-            <img src="{{ asset('images/manuscrit2.png') }}" alt="Photo de REMY JEREMY">
+            <img src="{{ asset('images/manuscrit2.png') }}" alt="Dessin manuscrit d'une balise </div>" loading="lazy" class="img-fluid">
         </div>
     </section>
 
@@ -53,17 +53,17 @@
         </div>
         <div class="about_img">
             <div class="about_img_container">
-            <img src="{{ asset('images/tree.png') }}" alt="Photo de REMY JEREMY" class="tree">
+            <img src="{{ asset('images/tree.png') }}" alt="Photo de REMY JEREMY" class="tree" loading="lazy">
 
             <!-- Fruits interactifs -->
-        <img src="{{ asset('images/pear.png') }}" alt="Fruit 1" class="fruit fruit1" data-quote="quote_1">
-        <img src="{{ asset('images/appleart.png') }}" alt="Fruit 2" class="fruit fruit2" data-quote="quote_2">
-        <img src="{{ asset('images/passion.png') }}" alt="Fruit 3" class="fruit fruit3" data-quote="quote_3">
-        <img src="{{ asset('images/fraise.png') }}" alt="Fruit 4" class="fruit fruit4" data-quote="quote_4">
+        <img src="{{ asset('images/pear.png') }}" alt="Fruit 1" class="fruit fruit1" data-quote="quote_1" loading="lazy">
+        <img src="{{ asset('images/appleart.png') }}" alt="Fruit 2" class="fruit fruit2" data-quote="quote_2" loading="lazy">
+        <img src="{{ asset('images/passion.png') }}" alt="Fruit 3" class="fruit fruit3" data-quote="quote_3" loading="lazy">
+        <img src="{{ asset('images/fraise.png') }}" alt="Fruit 4" class="fruit fruit4" data-quote="quote_4" loading="lazy">
         
         <blockquote>Depuis petit, l'informatique a toujours été le fil conducteur de ma vie, encore au moment où vous lisez ces lignes. Secrétaire en reconversion, je décide enfin d'essayer de vivre de ma passion, et de découvrir l'univers de la programmation.</blockquote>
         </div>
-            <img src="{{ asset('images/grass.png') }}" alt="Photo de REMY JEREMY" class="grass">
+            <img src="{{ asset('images/grass.png') }}" alt="Photo de REMY JEREMY" class="grass" loading="lazy">
         </div>
         <div class="about_quote">
             <p id="instruction">Sélectionnez un fruit en cliquant gauche sur l'arbre ci-contre</p>
@@ -132,7 +132,7 @@
 
     <section id="carousel">
     <div class="side-image left">
-        <img src="{{ asset('images/draw.svg') }}" alt="Image de gauche">
+        <img src="{{ asset('images/draw.svg') }}" alt="Illustration de gauche" loading="lazy">
     </div>
     <div class="carousel-container">
   <div class="carousel">
@@ -145,13 +145,13 @@
       </div>
       <div class="card-content">
         <div class="card-image">
-            <img src="{{ asset('images/img_gamepaw.png') }}" >
+            <img src="{{ asset('images/img_gamepaw.png') }}" loading="lazy">
         </div>
         <h4>GAMEPAW.FR</h4>
         <p>Site internet de l'entreprise</p>
         <p>GAMEPAW est un studio de jeu vidéo indépendant, incubé à Plaines Images. Effectué lors d'un stage, j'ai eu pour mission de créer un site vitrine dans un court laps de temps en répondant aux attentes de mes clients.</p>
         <div class="buttons">
-          <button class="btn active">Visiter le site</button>
+          <button class="btn active" href="https://www.gamepaw.fr">Visiter le site</button>
         </div>
       </div>
     </div>
@@ -164,7 +164,7 @@
       </div>
       <div class="card-content">
         <div class="card-image">
-            <img src="{{ asset('images/img_sortir.png') }}" >
+            <img src="{{ asset('images/img_sortir.png') }}" loading="lazy">
         </div>
         <h4>SORTIR.COM</h4>
         <p>Plateforme communautaire</p>
@@ -183,7 +183,7 @@
       </div>
       <div class="card-content">
         <div class="card-image">
-            <img src="{{ asset('images/img_jeremy.png') }}" >
+            <img src="{{ asset('images/img_jeremy.png') }}" loading="lazy">
         </div>
         <h4>jeremy-remy.fr</h4>
         <p>Portfolio de Jérémy Remy, développeur web</p>
@@ -200,7 +200,7 @@
     </div>
 
     <div class="side-image right">
-        <img src="{{ asset('images/slide.svg') }}" alt="Image de droite">
+        <img src="{{ asset('images/slide.svg') }}" alt="Illustration de droite" loading="lazy">
     </div>
 
 </section>
@@ -262,8 +262,8 @@
         </div>
     </a>
 
+  {% block footer %}
+      {% include 'partials/footer.html.twig' %}
+  {% endblock %}
 {% endblock %}
 
-{% block footer %}
-    {% include 'partials/footer.html.twig' %}
-{% endblock %}
