@@ -4,6 +4,16 @@
         <loc>https://jeremy-remy.fr/</loc>
         <lastmod>2024-04-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+
+
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jeremy-remy.fr/freelance</loc>
+        <lastmod>2024-04-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>

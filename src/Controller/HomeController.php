@@ -15,4 +15,12 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/freelance', name: 'app_freelance')]
+    public function freelance(): Response
+    {
+        return $this->render('home/freelance.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }

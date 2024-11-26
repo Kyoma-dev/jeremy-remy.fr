@@ -39,7 +39,7 @@ body {
 }
 
 .socials:hover {
-  color: #77DBA9; /* Couleur de survol pour les réseaux sociaux */
+  color: #AFEE85; /* Couleur de survol pour les réseaux sociaux */
   transition: color 0.3s ease;
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #77DBA9 !important;
+  color: #AFEE85 !important;
 }
 
 .navbar.scrolled {
@@ -172,12 +172,12 @@ body {
 }
 
 .landing_text h3 {
-  color: #77DBA9;
+  color: #AFEE85;
   font-weight: bold;
 }
 
 .p1 strong {
-  color: #77DBA9;
+  color: #AFEE85;
 }
 
 .landing_button {
@@ -208,7 +208,7 @@ body {
 }
 
 .landing_button a:hover i {
-  color: #77DBA9;
+  color: #AFEE85;
   scale: 1.5;
   transition: 0.5s ease;
 }
@@ -238,7 +238,7 @@ body {
 }
 
 .download-cv:hover {
-  color: #77DBA9;
+  color: #AFEE85;
   cursor: pointer;
 }
 
@@ -281,6 +281,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.my-image-container {
+  display: none; /* Caché par défaut */
+  text-align: center;
+  margin-bottom: 20px; /* Espacement en dessous de l'image */
+  opacity: 0; /* Transparence initiale pour l'animation */
+  transition: opacity 0.5s ease-in-out; /* Transition pour l'apparition douce */
 }
 
 .about_img_container blockquote {
@@ -414,7 +422,7 @@ body {
 }
 
 .slideshow-item:hover {
-  background-color: #77DBA9;
+  background-color: #AFEE85;
 }
 
 .slider-icon {
@@ -700,7 +708,7 @@ body {
 }
 
 .contact-icons i:hover {
-  color: #77DBA9;
+  color: #AFEE85;
 }
 
 .contact-form {
@@ -723,7 +731,7 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #77DBA9;
+  border-color: #AFEE85;
   background-color: #f0f8f7; /* Fond légèrement différent pour le focus */
 }
 
@@ -748,7 +756,7 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #77DBA9;
+  border-color: #AFEE85;
 }
 
 .captcha {
@@ -769,7 +777,7 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #77DBA9;
+  background-color: #AFEE85;
 }
 
 .flash-success {
@@ -782,6 +790,7 @@ body {
 
 #footer {
   margin-top: 3rem;
+  background-color: #B197FC;
 }
 
 #logo-footer {
@@ -825,7 +834,7 @@ body {
 }
 
 .project-bubble-link:hover {
-  background-color: #77DBA9;
+  background-color: #AFEE85;
   transform: scale(1.05);
 }
 
@@ -977,6 +986,23 @@ body {
         height: auto !important; /* Évite tout changement de hauteur */
     }
 
+    .my-image-container {
+      display: block;
+      opacity: 1;
+    }
+
+    .my-image {
+      margin-top: 20px;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        animation: fadeIn 1s ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive pour tablette (écran jusqu'à 768px) */
