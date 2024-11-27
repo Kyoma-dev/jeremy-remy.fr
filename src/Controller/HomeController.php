@@ -23,4 +23,12 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/freelance/creation-site-internet', name: 'app_site_internet')]
+    public function site_internet(): Response
+    {
+        return $this->render('home/development_web.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }

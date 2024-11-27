@@ -53,7 +53,7 @@
             </div>
             <h3>Développement Web</h3>
             <p>Création de sites internet sur mesure, performants et adaptés à vos besoins spécifiques.</p>
-            <a href="#details" class="btn btn-outline-primary">Découvrir</a>
+            <a href="{{ path('app_site_internet') }}" class="btn btn-outline-primary">Découvrir</a>
         </div>
         <div class="col-lg-2 col-md-4 text-center service-card mx-3">
             <div class="icon-wrapper mb-3">
@@ -208,15 +208,9 @@
     <div class="container text-center">
         <!-- Logo -->
         <div class="footer-logo mb-4">
-            <a href="{{ path('app_home') }}">
+            <a href="#about">
                 <img src="{{ asset('images/logo.svg') }}" alt="Logo Jérémy Remy" class="img-fluid" style="max-width: 150px;">
             </a>
-        </div>
-
-        <!-- Liens et mentions légales -->
-        <div class="footer-links mb-4">
-            <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#mentionsLegalesModal">Mentions Légales</a>
-            <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#politiqueConfModal">Politique de Confidentialité</a>
         </div>
 
         <!-- Réseaux sociaux -->
@@ -237,50 +231,14 @@
             <span>© {{ "now"|date("Y") }} Jérémy REMY. Tous droits réservés.</span>
         </div>
     </div>
-
-    <!-- Modals -->
-    <!-- Mentions Légales Modal -->
-    <div class="modal fade" id="mentionsLegalesModal" tabindex="-1" aria-labelledby="mentionsLegalesLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-secondary text-white">
-                    <h5 class="modal-title" id="mentionsLegalesLabel">Mentions Légales</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Nom :</strong> Jérémy REMY</p>
-                    <p><strong>Email :</strong> contact@jeremy-remy.fr</p>
-                    <p><strong>Hébergement :</strong> o2switch, 222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Politique de Confidentialité Modal -->
-    <div class="modal fade" id="politiqueConfModal" tabindex="-1" aria-labelledby="politiqueConfLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-secondary text-white">
-                    <h5 class="modal-title" id="politiqueConfLabel">Politique de Confidentialité</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Nous respectons votre vie privée et ne collectons que les informations nécessaires pour traiter vos demandes. Consultez notre politique pour plus de détails.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
+
 
 {% endblock %}
 
 {% block javascripts %}
             <script src="{{ asset('js/freelance.js') }}" defer></script>
             <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 {% endblock %}

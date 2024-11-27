@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
     console.log("Hello, Freelance!");
     const logo = document.getElementById("logo");
     const logoContainer = document.getElementById("logo-container");
@@ -112,5 +113,5 @@ document.addEventListener("DOMContentLoaded", () => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log('Formulaire soumis avec les données :', new FormData(form));
-});
+    });
 });

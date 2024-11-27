@@ -1,0 +1,174 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Développement Web - Jérémy REMY{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/creation_site.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<section id="hero-development" class="container-fluid" style="background-image: url('{{ asset('images/workspace.png') }}'); background-size: cover; background-position: center; height: 80vh;">
+    <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center">
+        <h1>Création de site internet Pays Basque & Landes</h1>
+        <p>Webmaster freelance spécialisé dans la création de sites vitrines, e-commerce ou institutionnels sous WordPress.</p>
+        <a href="#contact" class="btn">Me Contacter</a>
+    </div>
+
+    <div class="angle-shape"></div>
+</section>
+
+<section id="about-development" class="container py-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>
+                Webmaster freelance, j’accompagne les entreprises des Landes et du Pays Basque dans la création 
+                de sites internet professionnels et e-commerce, tout en restant à l’écoute de vos projets. 
+                Je propose une approche à la fois technique, marketing et orientée expérience utilisateur.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="about-development" class="container py-5">
+    <div class="row align-items-center">
+        <!-- Texte -->
+        <div class="col-md-6">
+            <h2 class="section-title">Création d’un site internet vitrine</h2>
+            <p>
+                Faites de votre site internet la vitrine de votre identité et de votre savoir-faire.
+            </p>
+            <p>
+                Parce que votre site web doit refléter vos valeurs et votre image de marque, j’attache une attention toute particulière à la compréhension de votre métier et de vos besoins.
+            </p>
+            <p>
+                En tant que webmaster freelance, je conçois des sites internet en utilisant Symfony ou le CMS WordPress, deux solutions réputées pour leur robustesse et leur efficacité. WordPress, utilisé par plus de 40 % des sites web dans le monde, est une technologie flexible et accessible, idéale pour garantir une prise en main rapide par le client. Grâce à cette expertise, je crée des sites performants, esthétiques et parfaitement adaptés à vos besoins, tout en optimisant leur visibilité dans les moteurs de recherche.            </p>
+            <p>
+                Mon approche ne se limite pas à celle d’un simple développeur. Issue d’une formation en secrétariat et en reconversion dans le développement web, je m’appuie sur une vision stratégique et pratique pour répondre aux besoins de mes clients. Avec une sensibilité artistique acquise lors de mes années en faculté d’art, je mets un point d’honneur à concevoir des solutions numériques esthétiques, fonctionnelles et adaptées à vos objectifs. Cette double compétence, entre créativité et organisation, garantit des projets uniques et performants.            </p>
+            <p>
+                Si vous recherchez une expertise locale, je travaille seul et suis disponible pour intervenir dans les Landes et le Pays basque, notamment autour de <a>Dax</a>, <a>Mont-de-Marsan</a>, <a>Pau</a>, <a>Bayonne</a>, ainsi que dans les communes environnantes. En tant que développeur web freelance, je vous accompagne dans la création de votre site internet avec une approche personnalisée et sur mesure, adaptée à vos besoins spécifiques.
+            </p>
+        </div>
+        <!-- Illustration -->
+        <div class="col-md-6 text-center">
+            <img src="{{ asset('images/vitrine-illustration.svg') }}" alt="Illustration de création de site vitrine" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+
+<section id="ecommerce-development" class="container py-5">
+    <div class="row align-items-center">
+        <!-- Image explicative -->
+        <div class="col-md-6">
+            <img src="{{ asset('images/ecommerce.svg') }}" alt="Illustration e-commerce" class="img-fluid">
+        </div>
+        <!-- Texte explicatif -->
+        <div class="col-md-6">
+            <h2 class="section-title">Développement d’un site e-commerce</h2>
+            <p>
+                Pour se lancer dans le monde du e-commerce, toujours plus concurrentiel et féroce, il faut être bien armé.
+            </p>
+            <p>
+                Ma prestation ne se résume pas à la création d’un site e-commerce, mais à vous accompagner dans votre stratégie web et à vous sensibiliser aux bonnes pratiques e-commerce afin de garantir le succès de votre projet.
+            </p>
+            <p>
+                Votre boutique en ligne sera optimisée pour répondre à vos besoins et ceux de vos clients : une expérience d’achat fluide et performante ainsi qu’une interface de gestion simple d’utilisation pour le client (et dont je pourrais vous dispenser la formation en tant que webmaster).
+            </p>
+            <p>
+                La création d’un site e-commerce peut également être accompagnée de services annexes comme une <a href="#">stratégie de référencement</a> afin de développer votre trafic naturel ou bien encore de <a href="#">publicité Google Ads</a> afin de stimuler vos ventes.
+            </p>
+        </div>
+    </div>
+        
+
+    <!-- Section tarifs -->
+    <div class="pricing-details mt-5">
+        <h3 class="text-center">Tarifs et abonnements</h3>
+        <div class="row justify-content-center">
+            <!-- Prestation développement -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h4>Prestation de développement</h4>
+                    <p class="price">2000 €</p>
+                    <p>Création et personnalisation complète de votre boutique en ligne Shopify.</p>
+                </div>
+            </div>
+            <!-- Abonnement Shopify -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h4>Abonnement Shopify</h4>
+                    <p class="price">À partir de 29 $/mois</p>
+                    <p>Abonnement mensuel à la plateforme Shopify, à régler directement par le client.</p>
+                </div>
+            </div>
+            <!-- Applications tierces -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h4>Applications tierces</h4>
+                    <p class="price">Coût variable</p>
+                    <p>Coûts des applications supplémentaires (SEO, gestion de stocks, etc.), à régler directement par le client.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mon-approche" class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="section-title">Mon approche</h2>
+    </div>
+    <div class="row">
+        <!-- Carte 1 -->
+        <div class="col-md-3 text-center">
+            <div class="approche-card">
+                <div class="approche-icon">
+                    <i class="fas fa-search fa-3x" style="color: #AF85EE;"></i>
+                </div>
+                <h3>Écoute, dialogue & suivi</h3>
+                <p>
+                    La base de mon approche est la compréhension de votre métier, de vos besoins et de vos objectifs. Cela en phase de brief, mais également une fois la mise en production lancée après la livraison.
+                </p>
+            </div>
+        </div>
+        <!-- Carte 2 -->
+        <div class="col-md-3 text-center">
+            <div class="approche-card">
+                <div class="approche-icon">
+                    <i class="fas fa-star fa-3x" style="color: #AF85EE;"></i>
+                </div>
+                <h3>Stratégie de contenu</h3>
+                <p>
+                    Ma philosophie est de penser contenu avant de penser design : les bons contenus font les sites internet performants. Tant au niveau des textes que des images « content is king ».
+                </p>
+            </div>
+        </div>
+        <!-- Carte 3 -->
+        <div class="col-md-3 text-center">
+            <div class="approche-card">
+                <div class="approche-icon">
+                    <i class="fas fa-mouse-pointer fa-3x" style="color: #AF85EE;"></i>
+                </div>
+                <h3>Expérience utilisateur</h3>
+                <p>
+                    L’expérience utilisateur est un point auquel je porte une attention toute particulière : il s’agit de créer une structure de site et de page claire et sollicitant l’engagement du visiteur.
+                </p>
+            </div>
+        </div>
+        <!-- Carte 4 -->
+        <div class="col-md-3 text-center">
+            <div class="approche-card">
+                <div class="approche-icon">
+                    <i class="fas fa-shopping-cart fa-3x" style="color: #AF85EE;"></i>
+                </div>
+                <h3>Référencement naturel</h3>
+                <p>
+                    Spécialisé en référencement naturel, je prends en compte le SEO dès le début de mes projets web. Pour être performant, un site web doit en effet avant tout capter du trafic.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

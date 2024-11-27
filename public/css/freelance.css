@@ -327,9 +327,10 @@ body.content-visible {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Empile les éléments verticalement */
+    text-align: center; /* Centre le texte */
     overflow: hidden;
     z-index: 1;
-    flex-wrap: wrap; /* Permet un comportement empilé pour les petits écrans */
 }
 
 /* Arrière-plan dynamique avec un dégradé animé */
@@ -341,9 +342,9 @@ body.content-visible {
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, #f4fbf8, #AFEE85, #fdf9f7);
-    background-size: 300% 300%; /* Étendre le dégradé */
-    animation: gradientMove 8s ease infinite; /* Animation fluide */
-    z-index: -2;
+    background-size: 200% 200%; /* Taille du dégradé */
+    animation: gradientMove 8s ease infinite;
+    z-index: -1; /* Derrière le formulaire */
 }
 
 /* Animation du dégradé */
@@ -371,14 +372,22 @@ body.content-visible {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 500px;
-    width: 90%; /* Responsive */
+    max-width: 500px; /* Largeur maximale */
+    width: 100%; /* S'adapte à la largeur disponible */
 }
 
 /* Style des champs de formulaire */
 .typeform-style .form-group {
     margin-bottom: 20px;
     text-align: left;
+}
+
+.typeform-style label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
 }
 
 .typeform-style {
@@ -396,30 +405,30 @@ body.content-visible {
 .typeform-style .form-control {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ececec;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Empêche les débordements */
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 .typeform-style .form-control:focus {
     border-color: #AFEE85;
-    box-shadow: 0 0 8px rgba(106, 183, 151, 0.5);
+    box-shadow: 0 0 5px rgba(106, 183, 151, 0.5);
     outline: none;
 }
 
 .typeform-style .btn-primary {
-    display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
     background-color: #AFEE85;
     border: none;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .typeform-style .btn-primary:hover {
@@ -434,8 +443,12 @@ body.content-visible {
 @media (max-width: 768px) {
 
     #contact-form {
-        height: auto; /* Hauteur automatique */
-        padding: 20px 0; /* Espacement intérieur */
+        padding: 15px; /* Réduit les marges */
+    }
+
+    .contact-content {
+        max-width: 90%; /* Ajuste la largeur */
+        padding: 20px; /* Réduit l'espace intérieur */
     }
 
     /* Ajuste les cartes de tarifs */
@@ -443,10 +456,9 @@ body.content-visible {
         width: 90%; /* Largeur presque complète */
     }
 
-    /* Ajuste le formulaire de contact */
-    .contact-content {
-        padding: 20px; /* Réduit l'espace intérieur */
-        max-width: 90%; /* Largeur quasi complète sur petits écrans */
+    .typeform-style .btn-primary {
+        font-size: 0.9rem; /* Réduit la taille du bouton */
+        padding: 10px; /* Ajuste l'espacement */
     }
 
     /* Arrière-plan pour petits écrans */
@@ -457,6 +469,14 @@ body.content-visible {
     #about img {
         max-width: 75%;
     }
+
+    .contact-content h2.section-title {
+        font-size: 1.8rem; /* Réduit la taille du titre */
+    }
+
+    .typeform-style {
+        min-width: 350px;
+      }
 }
 
 @media (max-width: 480px) {

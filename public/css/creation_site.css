@@ -1,0 +1,188 @@
+#hero-development {
+    background-image: url('images/workspace.png'); /* Chemin vers l'image réelle */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Hauteur de la section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.angle-shape {
+    position: absolute;
+    bottom: -1px; /* Positionnez juste sous la section */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Hauteur de l'angle */
+    background-color: #fff; /* Couleur de l'angle */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Triangle inversé */
+}
+
+#hero-development h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#hero-development p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#hero-development .btn {
+    background-color: #AF85EE;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#hero-development .btn:hover {
+    background-color: #6f2cd4;
+}
+
+#about-development {
+    text-align: center;
+}
+
+#about-development p {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+#about-development {
+    background-color: #ffffff; /* Fond blanc */
+    color: #333333; /* Texte en gris foncé */
+}
+
+#about-development .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000; /* Titre en noir */
+    margin-bottom: 20px;
+}
+
+#about-development p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+#about-development a {
+    color: #AF85EE; /* Lien avec une couleur verte */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#about-development a:hover {
+    color: #6f2cd4; /* Couleur plus foncée au survol */
+}
+
+#about-development img {
+    max-width: 100%; /* Image responsive */
+}
+
+
+#ecommerce-development {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-details {
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #AF85EE; /* Couleur personnalisée */
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+#mon-approche {
+    background-color: #fcfaff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.approche-card {
+    background: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.approche-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.approche-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 15px;
+}
+
+.approche-card p {
+    font-size: 1rem;
+    color: #555555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.approche-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
