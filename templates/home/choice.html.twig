@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choix - Jérémy REMY{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/choice.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="choice-container">
+    <!-- Section gauche pour le J -->
+    <a href="{{ path('app_freelance') }}" class="section-j">
+    <video class="background-video video-j" autoplay muted loop>
+            <source src="{{ asset('videos/video-freelance.webm') }}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéo.
+        </video>
+        <div class="letter">J</div>
+        <div class="hover-text freelance-text">FREELANCE</div>
+    </a>
+
+    <!-- Section droite pour le R -->
+    <a href="{{ path('app_home') }}" class="section-r">
+    <video class="background-video video-r" autoplay muted loop>
+            <source src="{{ asset('videos/video-portfolio.webm') }}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéo.
+        </video>
+        <div class="letter">R</div>
+        <div class="hover-text portfolio-text">PORTFOLIO</div>
+    </a>
+</div>
+{% endblock %}

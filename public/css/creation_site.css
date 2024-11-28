@@ -123,6 +123,17 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.btn-primary {
+    background-color: #AF85EE !important; /* Couleur personnalisée */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #6f2cd4 !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 .pricing-card h4 {
     font-size: 1.5rem;
     color: #333333;
@@ -185,4 +196,39 @@
     width: 60px;
     height: 60px;
     margin-bottom: 15px;
+}
+
+#footer {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+#footer .footer-logo img {
+    max-width: 100px !important;
+}
+
+#footer .footer-links a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000 !important;
+    transition: color 0.3s ease;
+}
+
+#footer .footer-links a:hover {
+    color: #8fc46d;
+}
+
+#footer .footer-social a {
+    color: #000000 !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+#footer .footer-social a:hover {
+    color: #8fc46d;
+}
+
+#footer .footer-text {
+    font-size: 0.9rem;
+    margin-top: 15px;
 }

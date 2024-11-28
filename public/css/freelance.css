@@ -23,7 +23,7 @@ body.content-visible {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000; /* Fond noir pour le logo */
+    background-color: #ffffff; /* Fond noir pour le logo */
     z-index: 10;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
@@ -73,6 +73,7 @@ body.content-visible {
 #about {
     background-color: #ffffff;
     padding: 40px 20px;
+    margin-top: 150px; /* Marge en haut de la section */
 }
 
 #about img {
@@ -414,7 +415,7 @@ body.content-visible {
 }
 
 .typeform-style .form-control:focus {
-    border-color: #AFEE85;
+    border-color: #66b830;
     box-shadow: 0 0 5px rgba(106, 183, 151, 0.5);
     outline: none;
 }
@@ -424,7 +425,7 @@ body.content-visible {
     padding: 12px;
     font-size: 1rem;
     color: #fff;
-    background-color: #AFEE85;
+    background-color: #5BB61F;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -441,6 +442,10 @@ body.content-visible {
 }
 
 @media (max-width: 768px) {
+
+    #about {
+        margin-top: 50px; /* Marge en haut de la section */
+    }
 
     #contact-form {
         padding: 15px; /* Réduit les marges */
@@ -497,8 +502,8 @@ body.content-visible {
 }
 
 #footer {
-    background-color: #000000 !important;
-    color: #ffffff;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
 #footer .footer-logo img {
@@ -508,7 +513,7 @@ body.content-visible {
 #footer .footer-links a {
     font-size: 1rem;
     text-decoration: none;
-    color: #AFEE85;
+    color: #000000 !important;
     transition: color 0.3s ease;
 }
 
@@ -517,7 +522,7 @@ body.content-visible {
 }
 
 #footer .footer-social a {
-    color: #AFEE85;
+    color: #000000 !important;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
@@ -529,4 +534,16 @@ body.content-visible {
 #footer .footer-text {
     font-size: 0.9rem;
     margin-top: 15px;
+}
+
+
+.navbar.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.navbar.visible {
+    opacity: 1;
+    visibility: visible;
 }

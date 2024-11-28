@@ -22,6 +22,8 @@
         <meta name="twitter:image" content="{{ asset('images/twitter-image.png') }}">
         {% endblock %}
 
+    <body class="{% block body_class %}{% endblock %}">
+
         {% block structured_data %}
             <script type="application/ld+json">
                 {

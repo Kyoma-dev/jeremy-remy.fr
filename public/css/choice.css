@@ -1,0 +1,187 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: #ffffff;
+}
+
+/* Container for both sections */
+.choice-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* Left section (J) */
+.section-j {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Cache la vidéo en dehors de cette section */
+}
+
+/* Right section (R) */
+.section-r {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Cache la vidéo en dehors de cette section */
+}
+
+/* Shared styles for letters */
+.letter {
+    font-size: 35vw;
+    font-weight: bold;
+    user-select: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+    line-height: 1;
+    position: relative; /* Pour que la lettre reste au-dessus des vidéos */
+    z-index: 2;
+}
+
+/* Letter J (specific) */
+.section-j .letter {
+    color: #000000;
+    margin-right: -2.5vw;
+}
+
+/* Letter R (specific) */
+.section-r .letter {
+    color: #000000;
+    margin-left: -2.5vw;
+}
+
+/* Hover effects for letters */
+.section-j:hover .letter {
+    transform: scale(1.1);
+    color: #AFEE85;
+    z-index: 3;
+}
+
+.section-r:hover .letter {
+    transform: scale(1.1);
+    color: #B197FC;
+    z-index: 3;
+}
+
+/* Video background styles */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste la vidéo pour couvrir l'espace */
+    z-index: 1; /* Place la vidéo derrière la lettre */
+    opacity: 0; /* Masque les vidéos par défaut */
+    transition: opacity 0.3s ease;
+    filter: brightness(0.5);
+}
+
+/* Show video on hover */
+.section-j:hover .video-j {
+    opacity: 1; /* Affiche la vidéo gauche */
+}
+
+.section-j:hover ~ .section-r .video-r {
+    opacity: 0; /* Cache la vidéo droite */
+}
+
+.section-r:hover .video-r {
+    opacity: 1; /* Affiche la vidéo droite */
+}
+
+.section-r:hover ~ .section-j .video-j {
+    opacity: 0; /* Cache la vidéo gauche */
+}
+
+
+/* Styles pour le texte apparaissant lors du survol */
+.hover-text {
+    position: absolute;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease; /* Transition douce */
+    z-index: 3;
+}
+
+/* Texte FREELANCE */
+.freelance-text {
+    top: 50%;
+    left: 120%; /* Position initiale hors du J */
+    transform: translate(-50%, -50%);
+    animation: none; /* Pas d'animation par défaut */
+}
+
+/* Texte PORTFOLIO */
+.portfolio-text {
+    top: 50%;
+    right: 120%; /* Position initiale hors du R */
+    transform: translate(50%, -50%);
+    animation: none; /* Pas d'animation par défaut */
+}
+
+/* Animation pour faire entrer le texte FREELANCE */
+.section-j:hover .freelance-text {
+    opacity: 1; /* Rendre visible */
+    animation: slideInFromRight 0.5s forwards; /* Lancer l'animation */
+}
+
+/* Animation pour faire entrer le texte PORTFOLIO */
+.section-r:hover .portfolio-text {
+    opacity: 1; /* Rendre visible */
+    animation: slideInFromLeft 0.5s forwards; /* Lancer l'animation */
+}
+
+/* Animation pour le texte FREELANCE */
+@keyframes slideInFromRight {
+    from {
+        left: 120%; /* Position initiale */
+    }
+    to {
+        left: 50%; /* Position finale */
+    }
+}
+
+/* Animation pour le texte PORTFOLIO */
+@keyframes slideInFromLeft {
+    from {
+        right: 120%; /* Position initiale */
+    }
+    to {
+        right: 50%; /* Position finale */
+    }
+}
+
+/* Style pour rendre les sections cliquables */
+a.section-j,
+a.section-r {
+    text-decoration: none; /* Supprime la décoration des liens */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Supprime l'effet de clic bleu sur les liens */
+a.section-j:focus,
+a.section-r:focus {
+    outline: none;
+}
